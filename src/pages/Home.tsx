@@ -123,9 +123,9 @@ function Home() {
                         class="h2-lg animated"
                         options={{
                           strings: [
-                            'Trace the origin of your protein',
-                            'Sanitize the protein value chain in Africa',
-                            'Guaranteed trace back mechanism',
+                            'Trace The Oigin of Your Protein',
+                            'Sanitize The Protein Value Chain in Africa',
+                            'Guaranteed Trace Back Mechanism',
                           ],
                           autoStart: true,
                           loop: true
