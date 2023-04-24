@@ -5268,3 +5268,7 @@ nav a#pull {
 .text-red-200 {
   color: #f6412d;
 }
+
+.rounded-e-full {
+  border-radius: 100%;
+}

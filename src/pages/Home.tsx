@@ -151,7 +151,7 @@ function Home() {
                       data-animation-delay={500}
                     >
                       {/* AppStore */}
-                      <a href="#" className="store">
+                      <a href={routesConstants.AppleStore} target="_blank" rel="noreferrer" className="store">
                         <img
                           className="appstore-original"
                           src="images/store_badges/appstore.png"
@@ -161,7 +161,7 @@ function Home() {
                         />
                       </a>
                       {/* Google Play */}
-                      <a href="#" className="store">
+                      <a href={routesConstants.PlayStore} target="_blank" rel="noreferrer" className="store">
                         <img
                           className="googleplay-original"
                           src="images/store_badges/googleplay.png"
@@ -334,18 +334,27 @@ function Home() {
             <div className="container">
               <div className="row d-flex align-items-center">
                 {/* CONTENT IMAGE */}
+
                 <div
                   className="col-md-6 animated"
                   data-animation="fadeInRight"
                   data-animation-delay={500}
                 >
-                  <div className="content-img">
-                    <img
-                      className="img-fluid"
-                      src="images/image-06.png"
-                      alt="content-image"
-                    />
-                  </div>
+                  <Carousel className='' autoplay dots={false}>
+                    <div className='m-auto ' >
+                      <img alt="" className="inline rounded-5xl md:w-5/6 rounded-e-full" width="80%" src="/img/large/slider-bg-1.jpeg" />
+                    </div>
+                    <div className='m-auto'>
+                      <img alt="" className="inline rounded-5xl md:w-5/6 rounded-e-full" width="80%" src="/img/large/slider-bg-2.jpeg" />
+                    </div>
+                    <div className='m-auto'>
+                      <img alt="" className="inline rounded-5xl md:w-5/6 rounded-e-full" width="80%" src="/img/large/weceta-bg-3.png" />
+                    </div>
+                    <div className='m-auto'>
+                      <img alt="" className="inline rounded-5xl md:w-5/6 rounded-e-full" width="80%" src="/img/large/slider-bg-3.jpeg" />
+                    </div>
+                  </Carousel>
+
                 </div>
                 {/* CONTENT TEXT */}
                 <div className="col-md-6">
@@ -432,7 +441,7 @@ function Home() {
                     <div className="download-3-img text-center ind-15">
                       <img
                         className="img-fluid"
-                        src="images/image-05.png"
+                        src="img/large/protein-trail-boot.png"
                         alt="download-image"
                       />
                     </div>
@@ -463,7 +472,7 @@ function Home() {
                         data-animation-delay={500}
                       >
                         {/* AppStore */}
-                        <a href="#" className="store">
+                        <a href={routesConstants.AppleStore} target="_blank" rel="noreferrer" className="store">
                           <img
                             className="appstore-grey"
                             src="images/store_badges/appstore-grey.png"
@@ -473,7 +482,7 @@ function Home() {
                           />
                         </a>
                         {/* Google Play */}
-                        <a href="#" className="store">
+                        <a href={routesConstants.PlayStore} target="_blank" rel="noreferrer" className="store">
                           <img
                             className="googleplay-grey"
                             src="images/store_badges/googleplay-grey.png"
@@ -752,16 +761,16 @@ function Home() {
                               {/* Change the link HERE!!! */}
                               <a
                                 className="video-popup"
-                                href="https://www.youtube.com/watch?v=kuceVNBTJio"
+                                href="https://www.youtube.com"
                               >
                                 {/* Play Icon */}
-                                <div className="video-block-wrapper">
+                                {/* <div className="video-block-wrapper">
                                   <div className="play-icon-green" />
-                                </div>
+                                </div> */}
                                 {/* Preview Image */}
                                 <img
                                   className="img-fluid"
-                                  src="images/video-3-img.png"
+                                  src="img/large/protein-trail-boot.png"
                                   alt="video-preview"
                                 />
                               </a>

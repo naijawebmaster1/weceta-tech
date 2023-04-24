@@ -7,6 +7,6 @@ export const routesConstants = {
     EMAIL: 'mailto:info@weceta.ng',
     TEL: 'tel:08188383838',
     PlayStore: 'https://play.google.com/store/apps/details?id=com.proteintrail',
-    AppleStore: 'https://www.apple.com/app-store/',
+    AppleStore: 'https://apps.apple.com/ng/app/proteintrail/id1620929935',
     ProteinTrail: 'https://proteintrail.com/',
 }
