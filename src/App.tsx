@@ -28,6 +28,7 @@ function App() {
           <CustomeSwitch>
             <ScrollToTop>
               <Switch>
+
                 <Route exact path="/" component={Home} />
                 <Route exact path={routesConstants.HOME} component={Home} />
                 <Route path={routesConstants.ABOUT} component={About} />
