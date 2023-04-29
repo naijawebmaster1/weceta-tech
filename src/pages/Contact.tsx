@@ -5,107 +5,142 @@ import Typewriter from 'typewriter-effect';
 import { Carousel } from 'antd';
 import WecetaCarousel from "./components/carousel/Carousel";
 import { routesConstants } from '../utility/routesConstants';
+import { useFormik } from 'formik';
 
 
-
-const contentStyle: React.CSSProperties = {
-  height: '160px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
-};
 function Contact() {
+  const formik = useFormik({
+    initialValues: {
+      fullName: '',
+      subject: '',
+      message: '',
+      email: '',
+    },
+    onSubmit: values => {
+      // alert(JSON.stringify(values, null, 2));
+
+      const { fullName, email, message, subject } = values;
+      const _subject = `New Message from ${fullName} with subject ${subject}`;
+      const body = `Name: ${fullName}\n\nEmail: ${email}\n\nMessage: ${message}`;
+      window.location.href = `mailto:info@wecetatech.com?subject=${encodeURIComponent(
+        _subject,
+      )}&body=${encodeURIComponent(body)}`;
+
+
+    },
+  });
+
   return (
     <div className="App">
-      <section className="bg-white md:p-4 p-0 ">
-        <section className="bg-gray-700 rounded-lg h-full pb-20 mb-20" style={{ backgroundImage: 'url("./assets/background/Pattern4.svg")' }}>
-          <Navbar imgSrc={"./img/logo.svg"} textColor={"text-black"} btnBgColor={"bg-gray-100"} btnTextColor={"text-blue-900"} hoverBtnBgColor={"text-gray-300"} hoverBtnTextColor={"text-gray-300"} />
-          <div className="md:flex md:flex-wrap text-center bg-blue-200 rounded-3xl md:text-left all ign-center overflow-hidden mx-10">
-            <div className="md:w-2/2 overflow-hidden text-white md:px-20 m-auto my-16 text-center flex justify-center">
-              <h1 className="text-5xl font-semibold text-black  mb-6">
+      <Navbar />
 
-                <Typewriter
-                  //@ts-ignore
-                  class="typewrite"
-                  options={{
-                    strings: [
-                      'Contact Us',
-                      'Send us a message',
-                      'Make inquiry',
-                    ],
-                    autoStart: true,
-                    loop: true
-                  }} />
+      <section
+        id="contacts-1"
+        className="bg-fixed bg-lightgrey wide-30 contacts-section division mt-10"
+      >
 
-              </h1>
-              {/* <p className="mt-6 text-lg text-gray-300">Get your commissions immediately when you trade your giftcards with Boon. Pay your bills with Boon and experience swift result times.</p> */}
+        <br /><br /><br /><br /><br /><br />
+        <div className="container">
+          {/* SECTION TITLE */}
+          <div className="row">
+            <div className="col-md-10 offset-md-1 section-title">
+              {/* Title 	*/}
+              <h2 className="h2-lg">Looking For Support?</h2>
+              {/* Text */}
+              <p>
+                Got a Question? We'd love to hear from you. Send us a message and we
+                will respond you as soon as possible
+              </p>
             </div>
+          </div>{" "}
+          {/* END SECTION TITLE */}
+          {/* CONTACT FORM */}
+          <div className="row">
+            <div className="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+              <div className="form-holder">
+                <form
+                  name="contactform"
+                  className="row contact-form"
+                  onSubmit={formik.handleSubmit}
+                >
+                  {/* Contact Form Input */}
+                  <div className="col-lg-6">
+                    <input
+                      type="text"
+                      name="fullName"
+                      className="form-control name"
+                      placeholder="Your Name*"
+                      onChange={formik.handleChange}
+                      value={formik.values.fullName}
+                      required
+                    />
+                  </div>
+                  <div className="col-lg-6">
+                    <input
+                      type="text"
+                      name="email"
+                      className="form-control email"
+                      placeholder="Email Address*"
+                      onChange={formik.handleChange}
+                      value={formik.values.email}
+                      required
 
-          </div>
+                    />
+                  </div>
+                  {/* Form Select */}
+                  <div className="col-md-12 input-subject">
+                    <input
+                      type="text"
+                      name="subject"
+                      className="form-control subject"
+                      placeholder="Email Address*"
+                      onChange={formik.handleChange}
+                      value={formik.values.subject}
+                      required
 
+                    />
+                  </div>
+                  <div id="input-message" className="col-lg-12 input-message">
+                    <textarea
+                      className="form-control message"
+                      name="message"
+                      rows={6}
+                      placeholder="Your Message ..."
+                      defaultValue={""}
+                      onChange={formik.handleChange}
+                      value={formik.values.message}
+                      required
 
-
-
-
-
-
-
-
-          {/* <div id="contain-circle">
-            <img alt="" className="inline w-6 arrow anim" src="./img/icons/floating-icons/1.svg" />
-            <img alt="" className="inline w-6 arrow-1 anim-1" src="./img/icons/floating-icons/2.svg" />
-            <img alt="" className="inline w-6 arrow-2 anim-2" src="./img/icons/floating-icons/3.svg" />
-            <img alt="" className="inline w-6 arrow-3 anim-3" src="./img/icons/floating-icons/4.svg" />
-          </div> */}
-
-        </section>
-      </section>
-
-      <section className={` py-0 md:px-0 m-auto`} style={{ backgroundImage: 'url("./assets/background/Pattern4.svg")' }}>
-
-        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0 mt-0 px-6 md:px-0 ">
-
-          {/* Card 1 */}
-          <div className="flex flex-col rounded-3xl transform transition duration-500 ">
-            <div className="md:px-24 py-16 flex flex-col pt-10">
-              <div className="md:my-2 mt-16  text-center  overflow-hidden flex justify-center" style={{ backgroundImage: 'url("./assets/background/Pattern4.svg")' }}>
-                {/* <img alt="" className="inline w-2/3 rounded-full" src="./img/large/100guarantee-300x280-1-(1).svg" /> */}
-                <div className='md:w-4/6'>
-                  <p className='font-semibold text-xl mb-6'>
-                    Have Question
-                  </p>
-                  <p className='font-bold text-5xl mb-6'>
-                    Write us a message
-                  </p>
-
-                              <a href={routesConstants.EMAIL}>
-                  <button className="mt-6 h-11 px-6 font-semibold rounded-md bg-yellow text-black text-md transform transition duration-500  hover:bg-blue-900 hover:text-white hover:border hover:border-white" type="submit">
-                    Send us a message
-                  </button>
-                  </a>
-                </div>
-
+                    />
+                  </div>
+                  {/* Contact Form Button */}
+                  <div className="col-lg-12 m-top-15 form-btn text-right">
+                    <button type="submit" className="btn btn-lightblue">
+                      Send Your Message
+                    </button>
+                  </div>
+                  {/* Contact Form Message */}
+                  <div className="col-lg-12 contact-form-msg">
+                    <span className="loading" />
+                  </div>
+                </form>
               </div>
             </div>
-          </div>
-          {/* Card 1 */}
-          <div className="flex flex-col rounded-3xl bg-transparent md:d-none">
-            <div className="p-0 flex flex-col pt-0">
-              <img alt="" className="inline w-6/6" src="./img/large/Beef-Meat-Transparent-PNG-2.svg" />
-            </div>
-          </div>
-          {/* Card 1 */}
-          {/* <div className="flex flex-col rounded-3xl bg-white transform transition duration-300 hover:bg-transparent hover:text-white border border-gray-200">
-            <div className="p-6 flex flex-col pt-10">
-              <img alt="" className="inline w-10" src="./assets/icons/EasyIcon.svg" />
-              <h4 className="text-xl font-semibold text-blue-900 mt-5 m-auto">Consumer Confidence</h4>
-              <p className="text-blue-300 mt-2 m-auto">Enhance the auditing and investigation processes during HACCP-related investigations.</p>
-            </div>
-          </div> */}
-        </div>
-
+          </div>{" "}
+          {/* END CONTACT FORM */}
+        </div>{" "}
+        {/* End container */}
       </section>
+
+
+
+
+
+
+
+
+
+
       <br />
       <br />
       <Footer />

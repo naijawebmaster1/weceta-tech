@@ -9,7 +9,7 @@ import {
   CSSTransition, SwitchTransition
 } from "react-transition-group";
 // import { useNavigate } from "react-router-dom";
-import { Home, About, Services, Certificates, Contact } from "./pages";
+import { Home, About, Services, Certificate, Contact } from "./pages";
 
 // import './App.css';
 import ScrollToTop from './utility/ScrollToTop';
@@ -30,7 +30,7 @@ function App() {
               <Switch>
                 <Route exact path={routesConstants.HOME} component={Home} />
                 <Route path={routesConstants.ABOUT} component={About} />
-                <Route path={routesConstants.CERTIFICATES} component={Certificates} />
+                <Route path={routesConstants.CERTIFICATES} component={Certificate} />
                 <Route path={routesConstants.SERVICES} component={Services} />
                 <Route path={routesConstants.CONTACT} component={Contact} />
                 <Route path="*" component={PageNotFound} />

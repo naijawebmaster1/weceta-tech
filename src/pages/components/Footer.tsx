@@ -1,84 +1,177 @@
+import { useFormik } from 'formik';
 import React from 'react';
 import { Link } from "react-router-dom";
 import { routesConstants } from '../../utility/routesConstants';
 
 function Footer() {
+
+  const formik = useFormik({
+    initialValues: {
+      fullName: '',
+      message: '',
+      email: '',
+    },
+    onSubmit: values => {
+      // alert(JSON.stringify(values, null, 2));
+
+      const { fullName, email, message } = values;
+      const _subject = `New Message from ${fullName}`;
+      const body = `Name: ${fullName}\n\nEmail: ${email}\n\nMessage: ${message}`;
+      window.location.href = `mailto:${routesConstants.EMAIL}?subject=${encodeURIComponent(
+        _subject,
+      )}&body=${encodeURIComponent(body)}`;
+
+    },
+  });
+
+  const now = new Date();
+  const year = now.getFullYear();
+
   return <>
-    <footer className="bg-gray-700 text-black py-6 md:px-28 px-6" >
-      <div className="md:flex  md:flex-wrap overflow-hidden lg:-mx-2">
-        <div className="md:w-2/5 overflow-hidden mb-10 md:mb-0 md:pr-20">
-          <div className="md:my-2 mt-0 overflow-hidden cursor-pointer md:hover:scale-105 transform transition duration-300 hover:bg-transparent  hover:text-black">
-            <Link to="/"><img alt="" className="inline mt-0 w-3/6" src="./img/logo.svg" /></Link>
-          </div>
-          <h6 className="font-semibold text-lg mb-3 text-black mt-10 md:mt-6">Support</h6>
-
-
-          <p className='mt-5'>
-            Weceta provides an advance technology that inflows with the supply chain that facilitates seamless execution of effective traceability of edible meats (including fish and other kinds of sea food) from the farm to end user.</p>
-
-
-          <div className="flex flex-wrap -mx-3 overflow-hidden pr-4 md:pr-0">
-           <a
-               rel="noreferrer" target="_blank" 
-               href={routesConstants.PlayStore}>           <div className="my-0 px-0 overflow-hidden">
-              <div className="flex flex-wrap md:justify-start my-4 bg-yellow rounded-xl mx-4 p-2 w-40 justify-center cursor-pointer md:hover:scale-105 hover:border hover:border-white transform transition duration-300 hover:bg-transparent hover:text-white hover:bg-blue-500">
-                <div className="w-1/5 overflow-hidden">
-                  <img alt="" className="inline mt-2" src="./assets/icons/playstore1.svg" />
-                </div>
-                <div className="w-4/5 overflow-hidden ">
-                  <div className="text-sm font-medium text-slate-400 inline">
-                    <p className='text-left text-black ml-4 font-semibold '>Download on Play Store</p>
-                  </div>
-                </div>
-              </div>        </div></a>
-            <div className="my-0 px-0 overflow-hidden">
-              <a
-               rel="noreferrer" target="_blank" 
-               href={routesConstants.AppleStore}> <div className="flex flex-wrap md:justify-start my-4 bg-yellow rounded-xl mx-4 p-2 w-40 justify-center cursor-pointer md:hover:scale-105 hover:border-white transform transition duration-300 hover:bg-transparent hover:border hover:text-white hover:bg-blue-500">
-                <div className="w-1/5 overflow-hidden">
-                  <img alt="" className="inline mt-2" src="./assets/icons/applestore1.svg" />
-                </div>
-                <div className="w-4/5 overflow-hidden">
-                  <div className="text-sm font-medium text-slate-400 inline">
-                    <p className='text-left text-black ml-4 font-semibold'>Download on Apple Store</p>
-                  </div>
-                </div>
-
-              </div> </a>
+    <footer id="footer-2" className="wide-60 footer division">
+      <div className="container">
+        {/* FOOTER CONTENT */}
+        <div className="row d-flex align-items-center">
+          {/* FOOTER ABOUT */}
+          <div className="col-md-8 col-lg-7">
+            <div className="footer-info p-right-30 m-bottom-40">
+              {/* Footer Logo */}
+              {/* For Retina Ready displays take a larger image, with double the amount of pixels that your image will be displayed (e.g 346 x 80 pixels) */}
+              <img
+                src="./img/logo.svg"
+                width={183}
+                height={50}
+                alt="footer-logo"
+              />
+              {/* Text */}
+              <p>
+                Weceta provides an advance technology that inflows with the supply chain that facilitates seamless execution of effective traceability of edible meats (including fish and other kinds of sea food) from the farm to end user.
+              </p>
             </div>
           </div>
-        </div>
-        <div className="md:w-1/5 overflow-hidden lg:my-2 lg:px-2 mb-8">
-          <h6 className="font-semibold text-lg mb-3 text-black">Explore</h6>
-          <Link to={routesConstants.HOME}>  <p className="mb-1">Home</p> </Link>
-          <Link to={routesConstants.CONTACT}>  <p>Contacts</p> </Link>
-        </div>
-        <div className="md:w-1/5 overflow-hidden lg:my-2 lg:px-2 mb-8">
-          <h6 className="font-semibold text-lg mb-3 text-black">Info</h6>
-          <Link to={routesConstants.ABOUT}>    <p className="mb-1">About Us</p></Link>
-          <Link to={routesConstants.SERVICES}>    <p>servces</p></Link>
-        </div>
-        <div className="md:w-1/5 overflow-hidden lg:my-2 lg:px-2 mb-8">
-          <h6 className="font-semibold text-lg mb-3 text-black">Contact</h6>
-          <Link to="">  <p className="mb-6">47, Isaac John St,
-            GRA Ikeja, Lagos Nigeria.</p> </Link>
-          <a href={routesConstants.EMAIL}>  <p className="mb-4">info@weceta.ng
-          </p> </a>
-          <a href={routesConstants.TEL}> <p className="mb-1">0818 838 3838</p> </a>
-          <div className="flex mt-5">
-            <Link to="">    <img alt="" className="inline mr-1 cursor-pointer md:hover:scale-105  transform transition duration-300 hover:bg-transparent hover:text-black" src="./assets/icons/socialmedia/Instagram.svg" /> </Link>
-            <Link to="">    <img alt="" className="inline mr-1 cursor-pointer md:hover:scale-105  transform transition duration-300 hover:bg-transparent hover:text-black" src="./assets/icons/socialmedia/Twitter.svg" /> </Link>
-            <Link to="">    <img alt="" className="inline mr-1 cursor-pointer md:hover:scale-105  transform transition duration-300 hover:bg-transparent hover:text-black" src="./assets/icons/socialmedia/LinkedIn.svg" /> </Link>
-            <Link to="">    <img alt="" className="inline cursor-pointer md:hover:scale-105  transform transition duration-300 hover:bg-transparent hover:text-black" src="./assets/icons/socialmedia/Facebook.svg" /> </Link>
+          {/* FOOTER SOCIAL LINKS */}
+          <div className="col-md-4 col-lg-4 offset-lg-1">
+            <div className="footer-socials-links text-right m-bottom-25">
+              {/* Social Links */}
+              <h6 className="font-semibold text-lg mb-3 text-black">Contact</h6>
+              <Link to="">  <p className="mb-6">47, Isaac John St,
+                GRA Ikeja, Lagos Nigeria.</p> </Link>
+
+              <a href={routesConstants.EMAIL}>  <p className="mb-4">info@wecetatech.com
+              </p> </a>
+
+              <h5 className="h5-sm">
+                <a href={routesConstants.TEL}> <p className="mb-1">0818 838 3838</p> </a>
+
+              </h5>
+
+            </div>
           </div>
+        </div>{" "}
+        {/* END FOOTER CONTENT */}
+        {/* BOTTOM FOOTER */}
+        <div className="bottom-footer">
+          <div className="row">
+            {/* FOOTER COPYRIGHT */}
+            <div className="col-md-5">
+              <div className="footer-copyright">
+
+
+                <p>
+                  © {year} <span>WecetaTech</span> All Rights Reserved
+                </p>
+              </div>
+            </div>
+            {/* FOOTER LINKS */}
+            <div className="col-md-7">
+              <div className="footer-links text-right">
+                <ul className="foo-links clearfix">
+                  <li>
+                    <a href={routesConstants.HOME}>Home</a>
+                  </li>
+                  <li>
+                    <a href={routesConstants.ABOUT}>About</a>
+                  </li>
+                  <li>
+                    <a href={routesConstants.CERTIFICATES}>Digital Certificate</a>
+                  </li>
+                  <li>
+                    <a href={routesConstants.CONTACT}>Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>{" "}
+          {/* End row */}
+        </div>{" "}
+        {/* END BOTTOM FOOTER */}
+      </div>{" "}
+      {/* End container */}
+    </footer>{" "}
+    {/* END FOOTER-2 */}
+    {/* BOTTOM QUICK FORM
+			============================================= */}
+    <div id="quick-form">
+      <div className="bottom-form">
+        {/* QUICK FORM HEADER */}
+        <div className="bottom-form-header">
+          <span className="pe-7s-chat" />
+          <p>Quick Contact Form</p>
+        </div>
+        {/* QUICK FORM */}
+        <div className="bottom-form-holder">
+          <form name="contactform" className="quick-contact-form" onSubmit={formik.handleSubmit}
+          >
+            {/* Contact Form Input */}
+            <div id="bottom-input-name">
+              <input
+                type="text"
+                name="fullName"
+                className="bottom-form-control bname"
+                placeholder="Your Name*"
+                onChange={formik.handleChange}
+                value={formik.values.fullName}
+                required
+              />
+            </div>
+            <div id="bottom-input-email">
+              <input
+                type="text"
+                name="email"
+                className="bottom-form-control bemail"
+                placeholder="Email Address*"
+                onChange={formik.handleChange}
+                value={formik.values.email}
+                required
+              />
+            </div>
+            <div id="bottom-input-message">
+              <textarea
+                className="bottom-form-control bmessage"
+                name="message"
+                rows={4}
+                placeholder="Your Message ..."
+                defaultValue={""}
+                onChange={formik.handleChange}
+                value={formik.values.message}
+                required
+              />
+            </div>
+            {/* Contact Form Button */}
+            <div className="m-top-15 form-btn text-right">
+              <button type="submit" className="btn btn-lightgreen submit">
+                Send
+              </button>
+            </div>
+            {/* Contact Form Message */}
+            <div className="contact-form-msg">
+              <span className="loading" />
+            </div>
+          </form>
         </div>
       </div>
-    </footer>
-    <footer className="bg-gray-700 text-black py-6 md:px-28 px-6 border-t border-gray-100">
-      <div className="md:flex justify-between md:flex-wrap overflow-hidden lg:-mx-2 ">
-        <p className='md:mt-5 text-center m-auto'>All Rights Reserved ©Weceta Technologies Limited</p>
-      </div>
-    </footer>
+    </div>{" "}
+    {/* END BOTTOM QUICK FORM */}
   </>
 }
 export default Footer;

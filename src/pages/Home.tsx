@@ -5,6 +5,19 @@ import { Carousel } from 'antd';
 import WecetaCarousel from "./components/carousel/Carousel";
 import { routesConstants } from '../utility/routesConstants';
 import { Link } from 'react-router-dom';
+import Certificates from './components/Certificates';
+import WhoWeAre from './components/WhoWeAre';
+
+
+
+const contentStyle: React.CSSProperties = {
+  height: '60%',
+  color: '#fff',
+  lineHeight: '160px',
+  textAlign: 'center',
+  background: '#364d79',
+
+};
 
 
 function Home() {
@@ -25,83 +38,7 @@ function Home() {
         {/* PAGE CONTENT
 		============================================= */}
         <div id="page" className="page">
-          {/* HEADER
-			============================================= */}
-          <header id="header" className="header">
-            <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-tra">
-              <div className="container">
-                {/* LOGO IMAGE */}
-                {/* For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 260 x 60 pixels) */}
-                <a href="#hero-5" className="navbar-brand logo-white">
-                  <img
-                    src="./img/logo.svg"
-                    width={160}
-                    height={60}
-                    alt="header-logo"
-                  />
-                </a>
-                <a href="#hero-5" className="navbar-brand logo-black">
-                  <img
-                    src="./img/logo.svg"
-                    width={160}
-                    height={60}
-                    alt="header-logo"
-                  />
-                </a>
-                {/* Responsive Menu Button */}
-                <button
-                  className="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span className="navbar-toggler-icon" />
-                </button>
-                {/* Navigation Menu */}
-                <div id="navbarSupportedContent" className="collapse navbar-collapse">
-                  <ul className="navbar-nav ml-auto">
-                    {/* Dropdown Link */}
-                    <li className="nav-item nl-simple">
-                      <a className="nav-link" href={routesConstants.HOME}>
-                        Home
-                      </a>
-                    </li>
-                    <li className="nav-item dropdown">
-                      <a
-                        className="nav-link"
-                        href={routesConstants.ABOUT}
-
-
-                      >
-                        About
-                      </a>
-                    </li>
-
-                    <li className="nav-item nl-simple">
-                      <a className="nav-link pre-link" href={routesConstants.CERTIFICATES}>
-                        Digital Certificates
-                        <span />
-                      </a>
-                    </li>
-                    <li className="nav-item nl-simple">
-                      <a className="nav-link" href={routesConstants.CONTACT}>
-                        Contact
-                      </a>
-                    </li>
-                  </ul>
-                </div>{" "}
-                {/* End Navigation Menu */}
-              </div>{" "}
-              {/* End container */}
-            </nav>{" "}
-            {/* End navbar  */}
-          </header>{" "}
-          {/* END HEADER */}
-          {/* HERO-5
-			============================================= */}
+          <Navbar />
           <section id="hero-5" className="bg-fixed hero-section division">
             <div className="container">
               {/* HERO CONTENT */}
@@ -194,6 +131,8 @@ function Home() {
                   <div className="hero-img">
                     <img
                       className="img-fluid"
+                      // width="65%"
+                      // src="img/large/protein-trail-boot.png"
                       src="images/hero-5-img.png"
                       alt="hero-image"
                     />
@@ -340,18 +279,18 @@ function Home() {
                   data-animation="fadeInRight"
                   data-animation-delay={500}
                 >
-                  <Carousel className='' autoplay dots={false}>
+                  <Carousel className='' autoplay dots={true}>
                     <div className='m-auto ' >
-                      <img alt="" className="inline rounded-5xl md:w-5/6 rounded-e-full" width="80%" src="/img/large/slider-bg-1.jpeg" />
+                      <img alt="" className="inline rounded-5xl md:w-5/6 rounded-e-10" width="100%" src="/img/large/slider-bg-1.jpeg" />
                     </div>
                     <div className='m-auto'>
-                      <img alt="" className="inline rounded-5xl md:w-5/6 rounded-e-full" width="80%" src="/img/large/slider-bg-2.jpeg" />
+                      <img alt="" className="inline rounded-5xl md:w-5/6 rounded-e-10" width="100%" src="/img/large/slider-bg-2.jpeg" />
                     </div>
                     <div className='m-auto'>
-                      <img alt="" className="inline rounded-5xl md:w-5/6 rounded-e-full" width="80%" src="/img/large/weceta-bg-3.png" />
+                      <img alt="" className="inline rounded-5xl md:w-5/6 rounded-e-10" width="100%" src="/img/large/weceta-bg-3.png" />
                     </div>
                     <div className='m-auto'>
-                      <img alt="" className="inline rounded-5xl md:w-5/6 rounded-e-full" width="80%" src="/img/large/slider-bg-3.jpeg" />
+                      <img alt="" className="inline rounded-5xl md:w-5/6 rounded-e-10" width="100%" src="/img/large/slider-bg-3.jpeg" />
                     </div>
                   </Carousel>
 
@@ -552,35 +491,35 @@ function Home() {
               <div className="screens-carousel">
                 {/* Screen #1 */}
                 <div className="carousel-item">
-                  <img src="images/portfolio/screen-1.jpg" alt="screenshot" />
+                  <img src="img/screenshots/Image-1.jpeg" width="100%" alt="screenshot" />
                 </div>
                 {/* Screen #2 */}
                 <div className="carousel-item">
-                  <img src="images/portfolio/screen-2.jpg" alt="screenshot" />
+                  <img src="img/screenshots/Image-2.jpeg" width="100%" alt="screenshot" />
                 </div>
                 {/* Screen #3 */}
                 <div className="carousel-item">
-                  <img src="images/portfolio/screen-3.jpg" alt="screenshot" />
+                  <img src="img/screenshots/Image-3.jpeg" width="100%" alt="screenshot" />
                 </div>
                 {/* Screen #4 */}
                 <div className="carousel-item">
-                  <img src="images/portfolio/screen-4.jpg" alt="screenshot" />
+                  <img src="img/screenshots/Image-4.png" width="100%" alt="screenshot" />
                 </div>
                 {/* Screen #5 */}
                 <div className="carousel-item">
-                  <img src="images/portfolio/screen-5.jpg" alt="screenshot" />
+                  <img src="img/screenshots/Image-5.png" width="100%" alt="screenshot" />
                 </div>
                 {/* Screen #6 */}
                 <div className="carousel-item">
-                  <img src="images/portfolio/screen-6.jpg" alt="screenshot" />
+                  <img src="img/screenshots/Image-2.jpeg" width="100%" alt="screenshot" />
                 </div>
                 {/* Screen #7 */}
                 <div className="carousel-item">
-                  <img src="images/portfolio/screen-7.jpg" alt="screenshot" />
+                  <img src="img/screenshots/Image-3.jpeg" width="100%" alt="screenshot" />
                 </div>
                 {/* Screen #8 */}
                 <div className="carousel-item">
-                  <img src="images/portfolio/screen-8.jpg" alt="screenshot" />
+                  <img src="img/screenshots/Image-1.jpeg" width="100%" alt="screenshot" />
                 </div>
               </div>
             </div>{" "}
@@ -589,43 +528,26 @@ function Home() {
           {/* END SCREENSHOTS-2 */}
           {/* VIDEO-3
 			============================================= */}
-          <section id="video-3" className="bg-scroll bg-dark video-section division">
-            <div className="container">
-              {/* SECTION TITLE */}
-              <div className="row">
-                <div className="col-md-10 offset-md-1 white-color section-title">
-                  {/* Title 	*/}
-                  <h2 className="h2-lg">Generated certificate</h2>
-                  {/* Text */}
-                  <p>
-                    Weceta provides an advanced technology that flows from farm to fork within the supply chain and facilitates seamless execution of effective traceable edible meats (including fish and other kinds of sea food).
-                  </p>
-                </div>{" "}
-                {/* End row */}
-              </div>{" "}
-              {/* END SECTION TITLE */}
-              <div className="row">
-                <div className="video-inner-bg">
-                  <div className="col-xl-10 offset-xl-1">
+          <Certificates />
 
-                    <div className="video-content">
-                      <div className="row d-flex align-items-center">
-                        <img alt="" width="100%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/Lagos-State.png" />
 
-                      </div>{" "}
-                      {/* End row */}
-                    </div>{" "}
-                    {/* End video-content */}
-                  </div>{" "}
-                  {/* END CONTENT TEXT */}
-                </div>{" "}
-                {/* End Inner Background */}
-              </div>{" "}
-              {/* End row */}
-            </div>{" "}
-            {/* End container */}
-          </section>{" "}
-          {/* END VIDEO-3 */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -793,61 +715,7 @@ function Home() {
             {/* END VIDEO-3 */}
           </>
 
-
-
-
-
-
-
-
-          <section id="faqs-1" className="bg-fixed wide-80 faqs-section division">
-            <div className="container">
-              {/* SECTION TITLE */}
-              <div className="row">
-                <div className="col-md-10 offset-md-1 section-title">
-                  {/* Title 	*/}
-                  <h2 className="h2-lg">Who We Are</h2>
-                  {/* Text */}
-                  {/* <p>
-                    Aliquam a augue suscipit, luctus neque purus ipsum neque dolor
-                    primis libero tempus, tempor posuere ligula varius
-                  </p> */}
-                </div>{" "}
-                {/* End row */}
-              </div>{" "}
-              {/* END SECTION TITLE */}
-              <div className="row">
-                {/* QUESTIONS HOLDER */}
-                <div className="col-lg-6">
-                  <img alt="" className="inline w-5/6" src="./img/large/Screenshot-2022-07-17-094508.png" />
-
-                </div>{" "}
-                {/* END QUESTIONS HOLDER */}
-                {/* QUESTIONS HOLDER */}
-                <div className="col-lg-6">
-                  <div className="questions-holder ind-30 mt-5">
-                    {/* QUESTION #5 */}
-                    Our aim is to sanitize the protein value chain in Africa using class A abattoirs via our protein trail technology, guaranteeing traceability and thereby increasing corporate investments in class A slaughterhouses on the continent.
-                    <br /><br />
-                    Weceta is a first-of-its-kind agritech startup in Nigeria We are equiped with technologies and infrastructures to facilitate the traceability of locally sourced meat (incuding fish and other kind of seafood) from farm to fork.
-                    <br /><br />
-                    Our effort enable the standardization of food/products tracking during the production, distribution and supply chain of red meat in Nigeria
-                    <br /><br />
-                    With the exclusive right to operate our fully patented technology (Protein Trail) across the country, our solution is an effective and seamless monitoring process for stakeholders and vetrinary authorities in each state, government inspectors, meet distributors, meat recipients (food business, etc), and end consumers.
-                  </div>
-                </div>{" "}
-                {/* END  QUESTIONS HOLDER */}
-              </div>{" "}
-              {/* End row */}
-            </div>{" "}
-            {/* End container */}
-          </section>{" "}
-
-
-
-
-
-
+          <WhoWeAre />
 
           <section id="reviews-1" className="wide-50 reviews-section division">
             <div className="container">
@@ -917,155 +785,10 @@ function Home() {
             </div>{" "}
             {/* End container */}
           </section>{" "}
-          {/* END NEWSLETTER-1 */}
-          {/* FOOTER-2
-			============================================= */}
-          <footer id="footer-2" className="wide-60 footer division">
-            <div className="container">
-              {/* FOOTER CONTENT */}
-              <div className="row d-flex align-items-center">
-                {/* FOOTER ABOUT */}
-                <div className="col-md-8 col-lg-7">
-                  <div className="footer-info p-right-30 m-bottom-40">
-                    {/* Footer Logo */}
-                    {/* For Retina Ready displays take a larger image, with double the amount of pixels that your image will be displayed (e.g 346 x 80 pixels) */}
-                    <img
-                      src="./img/logo.svg"
-                      width={183}
-                      height={50}
-                      alt="footer-logo"
-                    />
-                    {/* Text */}
-                    <p>
-                      Weceta provides an advance technology that inflows with the supply chain that facilitates seamless execution of effective traceability of edible meats (including fish and other kinds of sea food) from the farm to end user.
-                    </p>
-                  </div>
-                </div>
-                {/* FOOTER SOCIAL LINKS */}
-                <div className="col-md-4 col-lg-4 offset-lg-1">
-                  <div className="footer-socials-links text-right m-bottom-25">
-                    {/* Social Links */}
-                    <h6 className="font-semibold text-lg mb-3 text-black">Contact</h6>
-                    <Link to="">  <p className="mb-6">47, Isaac John St,
-                      GRA Ikeja, Lagos Nigeria.</p> </Link>
 
-                    <a href={routesConstants.EMAIL}>  <p className="mb-4">info@weceta.ng
-                    </p> </a>
+          <Footer />
 
-                    <h5 className="h5-sm">
-                      <a href={routesConstants.TEL}> <p className="mb-1">0818 838 3838</p> </a>
-
-                    </h5>
-
-                  </div>
-                </div>
-              </div>{" "}
-              {/* END FOOTER CONTENT */}
-              {/* BOTTOM FOOTER */}
-              <div className="bottom-footer">
-                <div className="row">
-                  {/* FOOTER COPYRIGHT */}
-                  <div className="col-md-5">
-                    <div className="footer-copyright">
-                      <p>
-                        © 2023 <span>WecetaTech</span> All Rights Reserved
-                      </p>
-                    </div>
-                  </div>
-                  {/* FOOTER LINKS */}
-                  <div className="col-md-7">
-                    <div className="footer-links text-right">
-                      <ul className="foo-links clearfix">
-                        <li>
-                          <a href={routesConstants.HOME}>Home</a>
-                        </li>
-                        <li>
-                          <a href={routesConstants.ABOUT}>About</a>
-                        </li>
-                        <li>
-                          <a href={routesConstants.CERTIFICATES}>Digital Certificate</a>
-                        </li>
-                        <li>
-                          <a href={routesConstants.CONTACT}>Contact</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>{" "}
-                {/* End row */}
-              </div>{" "}
-              {/* END BOTTOM FOOTER */}
-            </div>{" "}
-            {/* End container */}
-          </footer>{" "}
-          {/* END FOOTER-2 */}
-          {/* BOTTOM QUICK FORM
-			============================================= */}
-          <div id="quick-form">
-            <div className="bottom-form">
-              {/* QUICK FORM HEADER */}
-              <div className="bottom-form-header">
-                <span className="pe-7s-chat" />
-                <p>Quick Contact Form</p>
-              </div>
-              {/* QUICK FORM */}
-              <div className="bottom-form-holder">
-                <form name="contactform" className="quick-contact-form">
-                  {/* Contact Form Input */}
-                  <div id="bottom-input-name">
-                    <input
-                      type="text"
-                      name="name"
-                      className="bottom-form-control bname"
-                      placeholder="Your Name*"
-                    />
-                  </div>
-                  <div id="bottom-input-email">
-                    <input
-                      type="text"
-                      name="email"
-                      className="bottom-form-control bemail"
-                      placeholder="Email Address*"
-                    />
-                  </div>
-                  <div id="bottom-input-message">
-                    <textarea
-                      className="bottom-form-control bmessage"
-                      name="message"
-                      rows={4}
-                      placeholder="Your Message ..."
-                      defaultValue={""}
-                    />
-                  </div>
-                  {/* Contact Form Button */}
-                  <div className="m-top-15 form-btn text-right">
-                    <button type="submit" className="btn btn-lightgreen submit">
-                      Send
-                    </button>
-                  </div>
-                  {/* Contact Form Message */}
-                  <div className="contact-form-msg">
-                    <span className="loading" />
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>{" "}
-          {/* END BOTTOM QUICK FORM */}
         </div>{" "}
-        {/* END PAGE CONTENT */}
-        {/* EXTERNAL SCRIPTS
-		============================================= */}
-        {/* Custom Script */}
-        {/* HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. */}
-        {/* [if lt IE 9]>
-			
-			
-		<![endif] */}
-        {/* Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. */}
-        {/*
-		
-		*/}
       </>
 
     </div>

@@ -5272,3 +5272,7 @@ nav a#pull {
 .rounded-e-full {
   border-radius: 100%;
 }
+
+.rounded-e-10 {
+  border-radius: 10%;
+}
