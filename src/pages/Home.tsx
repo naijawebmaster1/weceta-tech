@@ -133,7 +133,7 @@ function Home() {
                       className="img-fluid"
                       // width="65%"
                       // src="img/large/protein-trail-boot.png"
-                      src="images/hero-5-img.png"
+                      src="img/large/Pixel-True-Mockup-2.png"
                       alt="hero-image"
                     />
                   </div>
@@ -379,8 +379,9 @@ function Home() {
                   >
                     <div className="download-3-img text-center ind-15">
                       <img
-                        className="img-fluid"
-                        src="img/large/protein-trail-boot.png"
+                        // className="img-fluid"
+                        width="120%"
+                        src="img/large/Pixel-True-Mockup-3.png"
                         alt="download-image"
                       />
                     </div>
@@ -680,22 +681,12 @@ function Home() {
                           {/* VIDEO PREVIEW */}
                           <div className="col-md-5">
                             <div className="video-preview text-center">
-                              {/* Change the link HERE!!! */}
-                              <a
-                                className="video-popup"
-                                href="https://www.youtube.com"
-                              >
-                                {/* Play Icon */}
-                                {/* <div className="video-block-wrapper">
-                                  <div className="play-icon-green" />
-                                </div> */}
-                                {/* Preview Image */}
-                                <img
-                                  className="img-fluid"
-                                  src="img/large/protein-trail-boot.png"
-                                  alt="video-preview"
-                                />
-                              </a>
+                              <img
+                                // className="img-fluid"
+                                width="120%"
+                                src="img/large/Pixel-True-Mockup-4.png"
+                                alt="download-image"
+                              />
                             </div>
                           </div>{" "}
                           {/* END VIDEO PREVIEW */}
