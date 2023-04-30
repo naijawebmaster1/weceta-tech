@@ -1,5 +1,5 @@
 export const routesConstants = {
-    HOME: '/index',
+    HOME: '/',
     SERVICES: '/services',
     ABOUT: '/about',
     CERTIFICATES: '/certificates',

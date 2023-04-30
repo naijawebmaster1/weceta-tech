@@ -131,7 +131,7 @@ function Home() {
                   <div className="hero-img">
                     <img
                       className="img-fluid"
-                      // width="65%"
+                      // width="150%"
                       // src="img/large/protein-trail-boot.png"
                       src="img/large/Pixel-True-Mockup-2.png"
                       alt="hero-image"

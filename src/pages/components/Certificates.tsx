@@ -59,10 +59,15 @@ function Certificates(props: any) {
         <Carousel autoplay dots={true} >
           <div>
             <h3 style={contentStyle}>
-              <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/Lagos-State.png" />
+              <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/cert-default.png" />
             </h3>
           </div>
           <div>
+            <h3 style={contentStyle}>
+              <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/cert-default-2.png" />
+            </h3>
+          </div>
+          {/* <div>
             <h3 style={contentStyle}>
               <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/Abia-State.png" />
             </h3>
@@ -91,7 +96,7 @@ function Certificates(props: any) {
             <h3 style={contentStyle}>
               <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/Ondo-State.png" />
             </h3>
-          </div>
+          </div> */}
         </Carousel>
         {/* End row */}
       </div>{" "}

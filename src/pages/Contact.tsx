@@ -93,7 +93,7 @@ function Contact() {
                       type="text"
                       name="subject"
                       className="form-control subject"
-                      placeholder="Email Address*"
+                      placeholder="Subject"
                       onChange={formik.handleChange}
                       value={formik.values.subject}
                       required
