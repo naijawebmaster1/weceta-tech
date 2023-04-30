@@ -161,7 +161,7 @@ function Home() {
                   <h2 className="h2-lg">Ante-Mortem & Post-Mortem Inspection</h2>
                   {/* Text */}
                   <p>
-                    When animals pass through the stages of inspection, they are usually issued some form of legal pass which traditionally happens in the form of a certificate (handled by the merchants) or some kind of body marking or a combination of either of these to varying degrees depending on jurisdiction. Weceta automates these into a seamless one-stop process having the following effect among other things
+                    When animals pass through the stages of inspection, they are usually issued some form of legal pass which traditionally happens in the form of a certificate (handled by the merchants) or some kind of body marking or a combination of either of these to varying degrees depending on jurisdiction. Wecetatech automates these into a seamless one-stop process having the following effect among other things
                   </p>
                 </div>
               </div>{" "}
@@ -304,7 +304,7 @@ function Home() {
                       data-animation="fadeInLeft"
                       data-animation-delay={300}
                     >
-                      The Weceta Idea
+                      The Wecetatech Idea
                     </h2>
                     {/* Text */}
                     {/* Title */}
@@ -320,7 +320,7 @@ function Home() {
                       data-animation="fadeInLeft"
                       data-animation-delay={400}
                     >
-                      Weceta is a tech-enabled startup established originally with a view to sanitizing the red meat value chain in Africa by facilitating and strengthening due diligence in the systems that transfer edible meat and its byproducts from farm to fork.
+                      Wecetatech is a tech-enabled startup established originally with a view to sanitizing the red meat value chain in Africa by facilitating and strengthening due diligence in the systems that transfer edible meat and its byproducts from farm to fork.
                     </p>
 
                     <h6
@@ -650,7 +650,7 @@ function Home() {
                           <div className="col-md-7">
                             <div className="video-txt p-right-30">
                               {/* Title */}
-                              <h4 className="h4-xl text-center center">Weceta is duly licenced by protein trail</h4>
+                              <h4 className="h4-xl text-center center">Wecetatech is duly licenced by protein trail</h4>
                               <div className="center text-center">                              <img alt="" width="80%" className=" text-center center m-auto inline w-2/3  text-center m-auto" src="./img/icons/logo-wide.svg" />
                               </div>
 

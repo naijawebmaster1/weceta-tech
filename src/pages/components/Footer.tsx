@@ -45,7 +45,7 @@ function Footer() {
               />
               {/* Text */}
               <p>
-                Weceta provides an advance technology that inflows with the supply chain that facilitates seamless execution of effective traceability of edible meats (including fish and other kinds of sea food) from the farm to end user.
+                Wecetatech provides an advance technology that inflows with the supply chain that facilitates seamless execution of effective traceability of edible meats (including fish and other kinds of sea food) from the farm to end user.
               </p>
             </div>
           </div>
@@ -61,7 +61,11 @@ function Footer() {
               </p> </a>
 
               <h5 className="h5-sm">
-                <a href={routesConstants.TEL}> <p className="mb-1">0818 838 3838</p> </a>
+                <a href={routesConstants.TEL2}> <p className="mb-1">0818 688 8882</p> </a>
+
+              </h5>
+              <h5 className="h5-sm">
+                <a href={routesConstants.TEL1}> <p className="mb-1">0818 688 8881</p> </a>
 
               </h5>
 
