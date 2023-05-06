@@ -131,8 +131,8 @@ function Home() {
                   <div className="hero-img">
                     <img
                       className="img-fluid"
-                      // width="150%"
-                      // src="img/large/protein-trail-boot.png"
+                      // width="120%"
+                      // src="img/large/mockup-featuring-two-iphones-x.png"
                       src="img/large/Pixel-True-Mockup-2.png"
                       alt="hero-image"
                     />
@@ -379,8 +379,9 @@ function Home() {
                   >
                     <div className="download-3-img text-center ind-15">
                       <img
-                        // className="img-fluid"
-                        width="120%"
+                        className="img-fluid"
+                        width="110%"
+                        // src="img/large/protein-trail-slider.png"
                         src="img/large/Pixel-True-Mockup-3.png"
                         alt="download-image"
                       />
@@ -682,9 +683,10 @@ function Home() {
                           <div className="col-md-5">
                             <div className="video-preview text-center">
                               <img
-                                // className="img-fluid"
-                                width="120%"
+                                className="img-fluid"
+                                // width="100%"
                                 src="img/large/Pixel-True-Mockup-4.png"
+                                // src="img/large/IMG_9676.png"
                                 alt="download-image"
                               />
                             </div>

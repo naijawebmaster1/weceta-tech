@@ -59,14 +59,45 @@ function Certificates(props: any) {
         <Carousel autoplay dots={true} >
           <div>
             <h3 style={contentStyle}>
-              <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/cert-default.png" />
+              <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/Nigeria.png" />
             </h3>
           </div>
           <div>
             <h3 style={contentStyle}>
-              <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/cert-default-2.png" />
+              <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/Botsuana.png" />
             </h3>
           </div>
+          <div>
+            <h3 style={contentStyle}>
+              <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/Ghana.png" />
+            </h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>
+              <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/Kenya.png" />
+            </h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>
+              <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/Liberia.png" />
+            </h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>
+              <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/Namibia.png" />
+            </h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>
+              <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/Rwanda.png" />
+            </h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>
+              <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/Uganda.png" />
+            </h3>
+          </div>
+
           {/* <div>
             <h3 style={contentStyle}>
               <img alt="" width="70%" className="inline md:w-2/3 rounded-md m-auto" src="./img/certificates/Abia-State.png" />

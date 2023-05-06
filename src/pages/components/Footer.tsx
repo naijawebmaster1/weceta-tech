@@ -45,8 +45,7 @@ function Footer() {
               />
               {/* Text */}
               <p>
-                Wecetatech provides an advance technology that inflows with the supply chain that facilitates seamless execution of effective traceability of edible meats (including fish and other kinds of sea food) from the farm to end user.
-              </p>
+                Weceta Technologies limited provides technology that inflows with the food supply chain and facilitates a seamless execution of effective traceability and validation of edible meats, including fish and other kinds of sea foods from the farm to the end user              </p>
             </div>
           </div>
           {/* FOOTER SOCIAL LINKS */}
