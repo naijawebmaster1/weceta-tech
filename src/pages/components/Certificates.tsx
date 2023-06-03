@@ -1,5 +1,6 @@
 import { Carousel } from 'antd';
 import React from 'react';
+import ReportCertificates from './ReportCertificates';
 
 
 const contentStyle: React.CSSProperties = {
@@ -134,7 +135,7 @@ function Certificates(props: any) {
       {/* End container */}
     </section>{" "}
     {/* END VIDEO-3 */}
-
+    <ReportCertificates />
 
 
   </>;

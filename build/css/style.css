@@ -5276,3 +5276,21 @@ nav a#pull {
 .rounded-e-10 {
   border-radius: 10%;
 }
+
+
+body>div:nth-child(20)>div>div.ant-modal-wrap {
+  z-index: 10000;
+}
+
+body>div:nth-child(20)>div>div.ant-modal-wrap>div>div.ant-modal-content {
+  padding: 0px;
+}
+
+body>div:nth-child(20)>div>div.ant-modal-wrap>div>div.ant-modal-content>div.ant-modal-footer {
+  display: none;
+}
+
+body>div:nth-child(20)>div>div.ant-modal-wrap>div>div.ant-modal-content>button>span>span>svg {
+  color: #fff;
+  font-size: x-large;
+}

@@ -2,12 +2,8 @@ import React from 'react';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import toast, { Toaster } from 'react-hot-toast';
-import {
-  TransitionGroup,
-  CSSTransition, SwitchTransition
-} from "react-transition-group";
-// import { useNavigate } from "react-router-dom";
+import { Toaster } from 'react-hot-toast';
+
 import { Home, About, Services, Certificate, Contact } from "./pages";
 
 // import './App.css';
