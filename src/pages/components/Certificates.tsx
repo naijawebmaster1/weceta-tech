@@ -135,7 +135,6 @@ function Certificates(props: any) {
       {/* End container */}
     </section>{" "}
     {/* END VIDEO-3 */}
-    <ReportCertificates />
 
 
   </>;

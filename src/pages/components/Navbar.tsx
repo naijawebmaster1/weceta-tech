@@ -73,6 +73,12 @@ function Navbar(props: any) {
                                         Contact
                                     </a>
                                 </li>
+                                {/* <li className="nav-item nl-simple">
+                                    <a className="nav-link pre-link" href={routesConstants.CERTIFICATES}>
+                                        Report Certificates
+                                        <span />
+                                    </a>
+                                </li> */}
                             </ul>
                         </div>{" "}
                         {/* End Navigation Menu */}

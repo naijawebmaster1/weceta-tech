@@ -661,7 +661,6 @@ function Home() {
                               <a href={routesConstants.ProteinTrail} target="_blank" rel="noreferrer" className="btn btn-lightgreen">
                                 Discover More on Protein Trail
                               </a></div>
-
                           </div>
                         </div>{" "}
                         {/* END VIDEO TEXT */}

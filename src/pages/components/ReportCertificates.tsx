@@ -10,14 +10,13 @@ function ReportCertificates(props: any) {
       message: '',
       certificateId: '',
       email: '',
+      phoneNumber: ''
     },
     onSubmit: (values, { resetForm }) => {
       setIsLoading(true);
-      // alert(JSON.stringify(values, null, 2));
-      // console.log(values);
       (async function SubmitRepot(values: any) {
         try {
-          const response = await fetch('https://api.example.com/reports', {
+          const response = await fetch('https://proteintrail.com/api/complains/create', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
@@ -27,28 +26,28 @@ function ReportCertificates(props: any) {
           if (response.ok) {
             const responseData = await response.json();
             console.log('Response:', responseData);
-            // Process the response data as needed
-          } else {
-            console.error('Request failed with status:', response.status);
-            // Handle the error
+            if (responseData.isSuccess == true) {
+              setTimeout(() => {
+                setSuccess(true)
+                resetForm();
+                if (props.onCancel) {
+                  setTimeout(() => {
+                    props.onCancel()
+                  }, 5000);
+                }
+              }, 1000);
+            } else {
+              alert(responseData.message)
+            }
           }
         } catch (error) {
-          console.error('An error occurred:', error);
+          console.error("An Error Has Occured:", error);
+          alert("An Error Has Occured")
           // Handle the error
         } finally {
-          setTimeout(() => {
-            setSuccess(true)
-            setIsLoading(false);
-            resetForm();
-            if (props.onCancel) {
-              setTimeout(() => {
-                props.onCancel()
-              }, 5000);
-            }
-          }, 3000);
+          setIsLoading(false);
         }
       })(values);
-
     },
   });
   return <>
@@ -59,7 +58,6 @@ function ReportCertificates(props: any) {
           className="bg-scroll bg-dark wide-80 contacts-section division"
         >
           <div className="container">
-            <span>X</span>
             {/* SECTION TITLE */}
             <div className="row">
               <div className="col-md-10 md:col- offset-md-1 section-title white-color">
@@ -94,40 +92,51 @@ function ReportCertificates(props: any) {
                     onSubmit={formik.handleSubmit}
                   >
                     {/* Contact Form Input */}
-                    <div id="input-name" className="col-lg-6">
+                    <div id="" className="col-lg-6">
                       <input
                         type="text"
                         name="fullName"
-                        className="form-control name"
+                        className="form-control   "
                         placeholder="Kindly Enter Your Full Name"
                         required
                         onChange={formik.handleChange}
                         value={formik.values.fullName}
                       />
                     </div>
-                    <div id="input-email" className="col-lg-6">
+                    <div id="" className="col-lg-6">
                       <input
                         type="text"
                         name="email"
-                        className="form-control email"
+                        className="form-control  "
                         placeholder="Kindly Enter Your Email Address"
                         required
                         onChange={formik.handleChange}
                         value={formik.values.email}
                       />
                     </div>
-                    <div id="input-subject" className="col-lg-12 input-subject">
+                    <div id="" className="col-lg-12  ">
                       <input
                         type="text"
                         name="certificateId"
-                        className="form-control subject"
+                        className="form-control  "
                         placeholder="Enter The Certificate ID"
                         required
                         onChange={formik.handleChange}
                         value={formik.values.certificateId}
                       />
                     </div>
-                    <div id="input-message" className="col-lg-12 input-message">
+                    <div id="" className="col-lg-12  ">
+                      <input
+                        type="text"
+                        name="phoneNumber"
+                        className="form-control  "
+                        placeholder="Enter Your Phone Number"
+                        required
+                        onChange={formik.handleChange}
+                        value={formik.values.phoneNumber}
+                      />
+                    </div>
+                    <div id="" className="col-lg-12  ">
                       <textarea
                         className="form-control message"
                         name="message"
