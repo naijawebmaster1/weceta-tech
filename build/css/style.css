@@ -5323,3 +5323,16 @@ body>div:nth-child(17)>div>div.ant-modal-wrap>div>div.ant-modal-content>button>s
   pointer-events: auto;
   padding: 0px 0px !important;
 }
+
+#contacts-2 .contact-form .form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #666;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  padding: 0 0px;
+  margin-bottom: 35px;
+}

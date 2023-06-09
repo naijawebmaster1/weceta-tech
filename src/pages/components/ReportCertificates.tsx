@@ -8,12 +8,18 @@ function ReportCertificates(props: any) {
     initialValues: {
       fullName: '',
       message: '',
-      certificateId: '',
+      restaurantName: '',
       email: '',
-      phoneNumber: ''
+      phoneNumber: '',
+      address: '',
+      city: '',
+      subject: ''
     },
     onSubmit: (values, { resetForm }) => {
       setIsLoading(true);
+      console.log(values);
+      const concatenatedValue = `${values.subject}  ${values.message}`;
+      values.message = concatenatedValue;
       (async function SubmitRepot(values: any) {
         try {
           const response = await fetch('https://proteintrail.com/api/complains/create', {
@@ -67,7 +73,7 @@ function ReportCertificates(props: any) {
                   <p>
                     Thank you for submitting the report. We will review it shortly and get back to you.                  </p></> :
                   <>
-                    <h2 className="h2-lg">Report a Certificate?</h2>
+                    <h2 className="h2-lg">Send us a Report?</h2>
                     <p>
                       Have a question or concern about a certificate? We value your feedback and are here to assist you. Please send us a message with the details of the certificate in question, and we will promptly review and respond to your inquiry.
                     </p>
@@ -97,7 +103,7 @@ function ReportCertificates(props: any) {
                         type="text"
                         name="fullName"
                         className="form-control   "
-                        placeholder="Kindly Enter Your Full Name"
+                        placeholder=" Enter Your Full Name"
                         required
                         onChange={formik.handleChange}
                         value={formik.values.fullName}
@@ -108,21 +114,10 @@ function ReportCertificates(props: any) {
                         type="text"
                         name="email"
                         className="form-control  "
-                        placeholder="Kindly Enter Your Email Address"
+                        placeholder=" Enter Your Email Address"
                         required
                         onChange={formik.handleChange}
                         value={formik.values.email}
-                      />
-                    </div>
-                    <div id="" className="col-lg-12  ">
-                      <input
-                        type="text"
-                        name="certificateId"
-                        className="form-control  "
-                        placeholder="Enter The Certificate ID"
-                        required
-                        onChange={formik.handleChange}
-                        value={formik.values.certificateId}
                       />
                     </div>
                     <div id="" className="col-lg-12  ">
@@ -137,11 +132,67 @@ function ReportCertificates(props: any) {
                       />
                     </div>
                     <div id="" className="col-lg-12  ">
+                      <input
+                        type="text"
+                        name="restaurantName"
+                        className="form-control"
+                        placeholder="Enter The Name Of Restaurant or Outlet"
+                        required
+                        onChange={formik.handleChange}
+                        value={formik.values.restaurantName}
+                      />
+                    </div>
+
+
+                    <div id="" className="col-lg-12">
+                      <select
+                        className="form-control"
+                        id="subject"
+                        name="subject"
+                        onChange={formik.handleChange}
+                        value={formik.values.subject}
+                      >                        <option disabled selected defaultValue="">
+                          Select an option
+                        </option>
+                        <option value="No QR Code displayed">No QR Code displayed</option>
+                        <option value="Expired Certificate">Expired Certificate</option>
+                      </select>
+                    </div>
+
+
+
+                    <div id="" className="col-lg-6">
+                      <input
+                        type="text"
+                        name="address"
+                        className="form-control   "
+                        placeholder=" Enter Address of Outlet"
+                        required
+                        onChange={formik.handleChange}
+                        value={formik.values.address}
+                      />
+                    </div>
+                    <div id="" className="col-lg-6">
+                      <input
+                        type="text"
+                        name="city"
+                        className="form-control  "
+                        placeholder=" Enter City of Outlet"
+                        required
+                        onChange={formik.handleChange}
+                        value={formik.values.city}
+                      />
+                    </div>
+
+
+
+
+                    <div id="" className="col-lg-12  ">
                       <textarea
                         className="form-control message"
                         name="message"
                         rows={6}
-                        placeholder="Kindly write us a brief report note here ..."
+                        placeholder=" Write us a brief report note here ..."
                         defaultValue={""}
                         required
                         onChange={formik.handleChange}
@@ -169,7 +220,7 @@ function ReportCertificates(props: any) {
           </div>{" "}
           {/* End container */}
         </section>
-      </Spin>
+      </Spin >
     </>
 
 

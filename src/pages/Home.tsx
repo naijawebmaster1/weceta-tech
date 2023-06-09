@@ -769,9 +769,9 @@ function Home() {
       </div>
 
       <div >
-        <Button type="primary" onClick={() => setOpen(true)}>
+        {/* <Button type="primary" onClick={() => setOpen(true)}>
           Open Modal of 1000px width
-        </Button>
+        </Button> */}
 
         <Modal
           style={{ top: 20 }}
