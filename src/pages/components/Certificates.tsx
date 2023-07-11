@@ -51,7 +51,7 @@ function Certificates(props: any) {
             <h2 className="h2-lg">Generated certificate</h2>
             {/* Text */}
             <p>
-              Wecetatech provides an advanced technology that flows from farm to fork within the supply chain and facilitates seamless execution of effective traceable edible meats (including fish and other kinds of sea food).
+              Weceta Tech provides an advanced technology that flows from farm to fork within the supply chain and facilitates seamless execution of effective traceable edible meats (including fish and other kinds of sea food).
             </p>
           </div>{" "}
           {/* End row */}

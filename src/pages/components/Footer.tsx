@@ -81,7 +81,7 @@ function Footer() {
 
 
                 <p>
-                  © {year} <span>WecetaTech</span> All Rights Reserved
+                  © {year} <span>Weceta Tech</span> All Rights Reserved
                 </p>
               </div>
             </div>

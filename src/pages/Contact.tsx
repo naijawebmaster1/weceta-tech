@@ -25,8 +25,6 @@ function Contact() {
       window.location.href = `mailto:info@wecetatech.com?subject=${encodeURIComponent(
         _subject,
       )}&body=${encodeURIComponent(body)}`;
-
-
     },
   });
 

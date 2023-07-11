@@ -20,7 +20,7 @@ function Testimonials(props: any) {
             <p className="text-black text-center mt-2 m-auto">Our aim is to sanitize the protein value chain in Africa using mechanised and semi-mechanised farming abattoirs via our protein trail technology, guaranteeing traceability and thereby increasing corporate investments in mechanised and semi-mechanised slaughterhouses on the continent.
               <br />
               <br />
-              Wecetatech is a first-of-its-kind agritech startup in Nigeria We are equiped with technologies and infrastructures to facilitate the traceability of locally sourced meat (incuding fish and other kind of seafood) from farm to fork.
+              Weceta Tech is a first-of-its-kind agritech startup in Nigeria We are equiped with technologies and infrastructures to facilitate the traceability of locally sourced meat (incuding fish and other kind of seafood) from farm to fork.
               <br />
               <br />
               Our effort enable the standardization of food/products tracking during the production, distribution and supply chain of red meat in Nigeria

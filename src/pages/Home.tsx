@@ -89,7 +89,7 @@ function Home() {
                     data-animation="fadeInUp"
                     data-animation-delay={400}
                   >
-                    Guaranteeing protein traceability, Sanitize the protein value chain in Africa, Increasing corporate investments in mechanised and semi-mechanised abattoirs
+                    Guaranteeing protein traceability, Sanitize the Meat and Poultry value chain in Africa, Increasing corporate investments in mechanised and semi-mechanised abattoirs
                   </p>
                   {/* HERO STORE BADGES */}
                   <div
@@ -168,7 +168,7 @@ function Home() {
                 <h2 className="h2-lg">Ante-Mortem & Post-Mortem Inspection</h2>
                 {/* Text */}
                 <p>
-                  When animals pass through the stages of inspection, they are usually issued some form of legal pass which traditionally happens in the form of a certificate (handled by the merchants) or some kind of body marking or a combination of either of these to varying degrees depending on jurisdiction. Wecetatech automates these into a seamless one-stop process having the following effect among other things
+                  When animals pass through the stages of inspection, they are usually issued some form of legal pass which traditionally happens in the form of a certificate (handled by the merchants) or some kind of body marking or a combination of either of these to varying degrees depending on jurisdiction. Weceta Tech automates these into a seamless one-stop process having the following effect among other things
                 </p>
               </div>
             </div>{" "}
@@ -311,7 +311,7 @@ function Home() {
                     data-animation="fadeInLeft"
                     data-animation-delay={300}
                   >
-                    The Wecetatech Idea
+                    The Weceta Tech Idea
                   </h2>
                   {/* Text */}
                   {/* Title */}
@@ -327,7 +327,7 @@ function Home() {
                     data-animation="fadeInLeft"
                     data-animation-delay={400}
                   >
-                    Wecetatech is a tech-enabled startup established originally with a view to sanitizing the red meat value chain in Africa by facilitating and strengthening due diligence in the systems that transfer edible meat and its byproducts from farm to fork.
+                    Weceta Tech is a tech-enabled startup established originally with a view to sanitizing the red meat value chain in Africa by facilitating and strengthening due diligence in the systems that transfer edible meat and its byproducts from farm to fork.
                   </p>
 
                   <h6
@@ -411,7 +411,7 @@ function Home() {
                       data-animation="fadeInLeft"
                       data-animation-delay={400}
                     >
-                      Download Protein Trail on Android Google play store and iOS app store.
+                      Download Proteintrail on Android Google play store and iOS app store.
                     </p>
                     {/* HERO STORE BADGES */}
                     <div
@@ -486,10 +486,10 @@ function Home() {
                 {/* Title 	*/}
                 <h2 className="h2-lg">Unique App Screens</h2>
                 {/* Text */}
-                <p>
+                {/* <p>
                   Aliquam a augue suscipit, luctus neque purus ipsum neque dolor
                   primis libero tempus, tempor posuere ligula varius
-                </p>
+                </p> */}
               </div>
             </div>{" "}
             {/* End row */}
@@ -560,11 +560,11 @@ function Home() {
                       data-animation="fadeInRight"
                       data-animation-delay={400}
                     >
-                      Our techlology protein trail is a fully developed and patented mobile app designed for efficient tracking of the origin, safety and transport of meat as they follow the production, distribution and supply of protein in Nigeria.
+                      Our techlology Proteintrail is a fully developed and patented mobile app designed for efficient tracking of the origin, safety and transport of meat as they follow the production, distribution and supply of protein in Nigeria.
                       <br /><br />
-                      Protein Trail is an easy to use solution with provision for database management and querying system traceabiity and document verification systems which have been specifically adapted for use in the meat supply chain.
+                      Proteintrail is an easy to use solution with provision for database management and querying system traceabiity and document verification systems which have been specifically adapted for use in the meat supply chain.
                       <br /><br />
-                      Protein Trail is accessable to the every day consumer of meats, food businesses , suppliers, distributors, government inspectors and veterinary authorities.
+                      Proteintrail is accessable to the every day consumer of meats, food businesses , suppliers, distributors, government inspectors and veterinary authorities.
                     </p>
                     {/* APP DEVICES */}
                     <div
@@ -619,7 +619,7 @@ function Home() {
               <div className="row">
                 <div className="col-md-10 offset-md-1 white-color section-title">
                   {/* Title 	*/}
-                  {/* <h2 className="h2-lg">Weceta is duly licenced by protein trail</h2> */}
+                  {/* <h2 className="h2-lg">Weceta is duly licenced by Proteintrail</h2> */}
                   {/* Text */}
                   {/* <p>
                       Aliquam a augue suscipit, luctus neque purus ipsum neque dolor
@@ -638,7 +638,7 @@ function Home() {
                         <div className="col-md-7">
                           <div className="video-txt p-right-30">
                             {/* Title */}
-                            <h4 className="h4-xl text-center center">Wecetatech is duly licenced by protein trail</h4>
+                            <h4 className="h4-xl text-center center">Weceta Tech is duly licenced by Proteintrail</h4>
                             <div className="center text-center">                              <img alt="" width="80%" className=" text-center center m-auto inline w-2/3  text-center m-auto" src="./img/icons/logo-wide.svg" />
                             </div>
 
@@ -659,7 +659,7 @@ function Home() {
                             {/* Button */}
                             <div className="center text-center">
                               <a href={routesConstants.ProteinTrail} target="_blank" rel="noreferrer" className="btn btn-lightgreen">
-                                Discover More on Protein Trail
+                                Discover More on Proteintrail
                               </a></div>
                           </div>
                         </div>{" "}
