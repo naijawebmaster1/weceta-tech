@@ -17,7 +17,7 @@ function Testimonials(props: any) {
             <h4 className="text-3xl font-semibold text-black mt-5 m-auto">Who We Are</h4>
             <br />
             <br />
-            <p className="text-black text-center mt-2 m-auto">Our aim is to sanitize the protein value chain in Africa using mechanised and semi-mechanised farming abattoirs via our protein trail technology, guaranteeing traceability and thereby increasing corporate investments in mechanised and semi-mechanised slaughterhouses on the continent.
+            <p className="text-black text-center mt-2 m-auto">Our aim is to sanitize the meat and poultry value chain in Africa using mechanised and semi-mechanised farming abattoirs via our proteintrail technology, guaranteeing traceability and thereby increasing corporate investments in mechanised and semi-mechanised slaughterhouses on the continent.
               <br />
               <br />
               Weceta Tech is a first-of-its-kind agritech startup in Nigeria We are equiped with technologies and infrastructures to facilitate the traceability of locally sourced meat (incuding fish and other kind of seafood) from farm to fork.
@@ -26,7 +26,7 @@ function Testimonials(props: any) {
               Our effort enable the standardization of food/products tracking during the production, distribution and supply chain of red meat in Nigeria
               <br />
               <br />
-              With the exclusive right to operate our fully patented technology (Protein Trail) across the country, our solution is an effective and seamless monitoring process for stakeholders and vetrinary authorities in each state, government inspectors, meet distributors, meat recipients (food business, etc), and end consumers.
+              With the exclusive right to operate our fully patented technology (ProteinTrail) across the country, our solution is an effective and seamless monitoring process for stakeholders and vetrinary authorities in each state, government inspectors, meet distributors, meat recipients (food business, etc), and end consumers.
             </p>
           </div>
         </div>

@@ -71,7 +71,7 @@ function Home() {
                       options={{
                         strings: [
                           'Trace The Origin of Your Protein',
-                          'Sanitize The Protein Value Chain in Africa',
+                          'Sanitize The Meat and Poultry Value Chain in Africa',
                           'Guaranteed Trace Back Mechanism',
                         ],
                         autoStart: true,
@@ -89,7 +89,7 @@ function Home() {
                     data-animation="fadeInUp"
                     data-animation-delay={400}
                   >
-                    Guaranteeing protein traceability, Sanitize the Meat and Poultry value chain in Africa, Increasing corporate investments in mechanised and semi-mechanised abattoirs
+                    Guaranteeing meat and poultry traceability, Sanitize the Meat and Poultry value chain in Africa, Increasing corporate investments in mechanised and semi-mechanised abattoirs
                   </p>
                   {/* HERO STORE BADGES */}
                   <div
@@ -320,7 +320,7 @@ function Home() {
                     data-animation="fadeInLeft"
                     data-animation-delay={500}
                   >
-                    Shedding light on protein value chain in Africa
+                    Shedding light on meat and poultry value chain in Africa
                   </h5>
                   <p
                     className=" animated"
@@ -560,7 +560,7 @@ function Home() {
                       data-animation="fadeInRight"
                       data-animation-delay={400}
                     >
-                      Our techlology Proteintrail is a fully developed and patented mobile app designed for efficient tracking of the origin, safety and transport of meat as they follow the production, distribution and supply of protein in Nigeria.
+                      Our techlology Proteintrail is a fully developed and patented mobile app designed for efficient tracking of the origin, safety and transport of meat as they follow the production, distribution and supply of meat and poultry in Nigeria.
                       <br /><br />
                       Proteintrail is an easy to use solution with provision for database management and querying system traceabiity and document verification systems which have been specifically adapted for use in the meat supply chain.
                       <br /><br />
