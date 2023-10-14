@@ -252,27 +252,6 @@ function Home() {
         </section>{" "}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <section
           id="content-4"
           className="bg-scroll wide-60 content-section division"
@@ -403,7 +382,7 @@ function Home() {
                       data-animation="fadeInLeft"
                       data-animation-delay={300}
                     >
-                      Do even more with the Proteintrail App
+                      Do even more with the ProteinTrail App
                     </h2>
                     {/* Text */}
                     <p
@@ -411,7 +390,7 @@ function Home() {
                       data-animation="fadeInLeft"
                       data-animation-delay={400}
                     >
-                      Download Proteintrail on Android Google play store and iOS app store.
+                      Download ProteinTrail on Android Google play store and iOS app store.
                     </p>
                     {/* HERO STORE BADGES */}
                     <div
@@ -560,11 +539,11 @@ function Home() {
                       data-animation="fadeInRight"
                       data-animation-delay={400}
                     >
-                      Our techlology Proteintrail is a fully developed and patented mobile app designed for efficient tracking of the origin, safety and transport of meat as they follow the production, distribution and supply of meat and poultry in Nigeria.
+                      Our techlology ProteinTrail is a fully developed and patented mobile app designed for efficient tracking of the origin, safety and transport of meat as they follow the production, distribution and supply of meat and poultry in Nigeria.
                       <br /><br />
-                      Proteintrail is an easy to use solution with provision for database management and querying system traceabiity and document verification systems which have been specifically adapted for use in the meat supply chain.
+                      ProteinTrail is an easy to use solution with provision for database management and querying system traceabiity and document verification systems which have been specifically adapted for use in the meat supply chain.
                       <br /><br />
-                      Proteintrail is accessable to the every day consumer of meats, food businesses , suppliers, distributors, government inspectors and veterinary authorities.
+                      ProteinTrail is accessable to the every day consumer of meats, food businesses , suppliers, distributors, government inspectors and veterinary authorities.
                     </p>
                     {/* APP DEVICES */}
                     <div
@@ -619,7 +598,7 @@ function Home() {
               <div className="row">
                 <div className="col-md-10 offset-md-1 white-color section-title">
                   {/* Title 	*/}
-                  {/* <h2 className="h2-lg">Weceta is duly licenced by Proteintrail</h2> */}
+                  {/* <h2 className="h2-lg">Weceta is duly licenced by ProteinTrail</h2> */}
                   {/* Text */}
                   {/* <p>
                       Aliquam a augue suscipit, luctus neque purus ipsum neque dolor
@@ -638,7 +617,7 @@ function Home() {
                         <div className="col-md-7">
                           <div className="video-txt p-right-30">
                             {/* Title */}
-                            <h4 className="h4-xl text-center center">Weceta Tech is duly licenced by Proteintrail</h4>
+                            <h4 className="h4-xl text-center center">Weceta Tech is duly licenced by ProteinTrail</h4>
                             <div className="center text-center">                              <img alt="" width="80%" className=" text-center center m-auto inline w-2/3  text-center m-auto" src="./img/icons/logo-wide.svg" />
                             </div>
 
@@ -659,7 +638,7 @@ function Home() {
                             {/* Button */}
                             <div className="center text-center">
                               <a href={routesConstants.ProteinTrail} target="_blank" rel="noreferrer" className="btn btn-lightgreen">
-                                Discover More on Proteintrail
+                                Discover More on ProteinTrail
                               </a></div>
                           </div>
                         </div>{" "}
