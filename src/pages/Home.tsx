@@ -279,7 +279,7 @@ function Home() {
                     <img alt="" className="inline rounded-5xl md:w-5/6 rounded-e-10" width="100%" src="/img/large/slider-bg-3.jpeg" />
                   </div>
                 </Carousel>
-
+                {/* c */}
               </div>
               {/* CONTENT TEXT */}
               <div className="col-md-6">
