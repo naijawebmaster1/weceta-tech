@@ -150,7 +150,7 @@ function Home() {
               </div>
             </div>{" "}
           </div>{" "}
-        </section>{" "}
+        </section>
 
         <section
           id="features-3"
