@@ -70,7 +70,7 @@ function Home() {
                       class="h2-lg animated"
                       options={{
                         strings: [
-                          'Trace The Origin of Your Protein',
+                          'The pathway to meat export in Nigeria',
                           'Sanitize The Meat and Poultry Value Chain in Africa',
                           'Guaranteed Trace Back Mechanism',
                         ],
@@ -151,6 +151,110 @@ function Home() {
             </div>{" "}
           </div>{" "}
         </section>{" "}
+
+        <section
+          id="features-3"
+          className="bg-fixed wide-30 featuress-section division"
+          style={{
+            backgroundImage: "url(images/tra-waves.png)",
+            backgroundPosition: "center bottom"
+          }}
+        >
+          <div className="container">
+            {/* SECTION TITLE 	*/}
+            <div className="row">
+              <div className="col-md-12 section-title">
+                {/* Title 	*/}
+                <h2 className="h2-lg">Weceta Foods Limited; Set For Meat Export</h2>
+                {/* Text */}
+                <p>
+                  Starting December 2025, Weceta Tech will implement a transparent digital system for the beef export process, covering every stage from birth to export. Traditionally, animals receive legal passes through certificates or body markings. Weceta Tech automates these processes into a seamless one-stop system, ensuring digital records from birth, fattening, and slaughter to export. This streamlines documentation, enhances traceability, and ensures compliance with regulations, benefiting farmers, processors, regulators, and buyers.
+                </p>
+              </div>
+            </div>{" "}
+            {/* END SECTION TITLE */}
+            <div className="row">
+              {/* FEATURE BOX #1 */}
+              <div
+                className="col-md-6 col-lg-3 animated"
+                data-animation="fadeInUp"
+                data-animation-delay={300}
+              >
+                <div className="fbox-3 box-icon-lg green-hover">
+                  <div className="box-line" />
+                  {/* Icon */}
+                  <span className="pe-7s-home" />
+                  {/* Title */}
+                  <h5 className="h5-md">Ranch</h5>
+                  {/* Text */}
+                  <p className="grey-color">
+                    Monitoring livestock from birth with secure digital records, ensuring health and growth tracking.
+                  </p>
+                </div>
+              </div>
+              {/* FEATURE BOX #2 */}
+              <div
+                className="col-md-6 col-lg-3 animated"
+                data-animation="fadeInUp"
+                data-animation-delay={400}
+              >
+                <div className="fbox-3 box-icon-lg green-hover">
+                  <div className="box-line" />
+                  {/* Icon */}
+                  <span className="pe-7s-scissors" />
+                  {/* Title */}
+                  <h5 className="h5-md">Abattoir</h5>
+                  {/* Text */}
+                  <p className="grey-color">
+                    Ensuring humane and hygienic slaughter practices while maintaining traceability for each animal.
+                  </p>
+                </div>
+              </div>
+              {/* FEATURE BOX #3 */}
+              <div
+                className="col-md-6 col-lg-3 animated"
+                data-animation="fadeInUp"
+                data-animation-delay={500}
+              >
+                <div className="fbox-3 box-icon-lg green-hover">
+                  <div className="box-line" />
+                  {/* Icon */}
+                  <span className="pe-7s-box2" />
+                  {/* Title */}
+                  <h5 className="h5-md">Storage</h5>
+                  {/* Text */}
+                  <p className="grey-color">
+                    Implementing advanced cold storage solutions to preserve meat quality and safety for consumption.
+                  </p>
+                </div>
+              </div>
+              {/* FEATURE BOX #4 */}
+              <div
+                className="col-md-6 col-lg-3 animated"
+                data-animation="fadeInUp"
+                data-animation-delay={600}
+              >
+                <div className="fbox-3 box-icon-lg green-hover">
+                  <div className="box-line" />
+                  {/* Icon */}
+                  <span className="pe-7s-plane" />
+                  {/* Title */}
+                  <h5 className="h5-md">Export</h5>
+                  {/* Text */}
+                  <p className="grey-color">
+                    Facilitating seamless export processes with complete documentation and compliance with standards.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* End row */}
+          </div>{" "}
+          {/* End container */}
+        </section>{" "}
+
+
+
+
 
         <section
           id="features-3"
@@ -250,6 +354,12 @@ function Home() {
           </div>{" "}
           {/* End container */}
         </section>{" "}
+
+
+
+
+
+
 
 
         <section
